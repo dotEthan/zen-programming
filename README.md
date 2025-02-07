@@ -14,6 +14,12 @@ This Readme seems to be working.
 
 - So far all is good.
 
+### Why?
+
+I find the more sense I use to learn something the better I am at remembering it, so if I can take the time and effort to create examples of these concepts, it would be pretty hard for them to be forgotten.
+
+Using Next.js as I haven't and I hear good things. I also have some long term thoughts for this site that will require more server side code so Next.js will help there a lot. 
+
 ## Where are we?
 
 ### Working (not feature complete, full design still in progress):
@@ -26,6 +32,7 @@ This Readme seems to be working.
 
 ### To Come:
 
+- Sorting Types
 - DSA
 - System Design
 - Design Patterns
@@ -38,13 +45,7 @@ This Readme seems to be working.
 
 ## Built With
 
-- HTML
-- CSS
-- TypeScript
-- React
-- Vitest
-- Vue Testing Utils
-- Vite
+- Next.JS
 
 ## Author
 
