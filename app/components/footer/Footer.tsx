@@ -1,33 +1,45 @@
 "use client";
 
 import Link from 'next/link';
-import { NAV_ITEMS } from '@/app/types/navigation';
 
 export default function Footer() {
   return (
-    <footer className="border-t border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900 py-8 transition-colors duration-300">
-      <div className="container mx-auto px-6 flex flex-col md:flex-row justify-between items-center">
-
-        <div className="mb-6 md:mb-0">
-          <div className="flex items-center">
-            <div className="w-8 h-8 rounded-full bg-indigo-600 mr-3"></div>
-            <span className="text-xl font-bold text-gray-900 dark:text-white">
+    <footer className="bg-gray-100 py-6 mt-12" aria-label="Footer">
+      <div className="container mx-auto px-4">
+        <div className="flex flex-col md:flex-row justify-between items-center">
+          <div className="mb-4 md:mb-0">
+            <Link
+              href="/"
+              className="text-xl font-bold text-gray-800 hover:text-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 rounded"
+              aria-label="Home"
+            >
               Zenful Programming
-            </span>
+            </Link>
+          </div>
+          <div className="flex gap-6">
+            <Link
+              href="/privacy"
+              className="text-gray-600 hover:text-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 rounded px-2 py-1"
+              aria-label="Privacy Policy"
+            >
+              Privacy
+            </Link>
+            <Link
+              href="/terms"
+              className="text-gray-600 hover:text-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 rounded px-2 py-1"
+              aria-label="Terms of Service"
+            >
+              Terms
+            </Link>
+            <Link
+              href="/contact"
+              className="text-gray-600 hover:text-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 rounded px-2 py-1"
+              aria-label="Contact Us"
+            >
+              Contact
+            </Link>
           </div>
         </div>
-
-        <nav className="grid grid-cols-2 gap-x-8 gap-y-2">
-          {NAV_ITEMS.map((item) => (
-            <Link
-              key={item.path}
-              href={item.path}
-              className="text-gray-600 dark:text-gray-400 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors"
-            >
-              {item.label}
-            </Link>
-          ))}
-        </nav>
       </div>
     </footer>
   );
