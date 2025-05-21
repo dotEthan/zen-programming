@@ -5,9 +5,9 @@ import { NAV_ITEMS } from '@/app/types/navigation';
 
 export default function Footer() {
   return (
-    <footer className="border-t border-gray-200 dark:border-gray-800 py-8">
+    <footer className="border-t border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900 py-8 transition-colors duration-300">
       <div className="container mx-auto px-6 flex flex-col md:flex-row justify-between items-center">
-        {/* Left - Branding */}
+
         <div className="mb-6 md:mb-0">
           <div className="flex items-center">
             <div className="w-8 h-8 rounded-full bg-indigo-600 mr-3"></div>
@@ -17,7 +17,6 @@ export default function Footer() {
           </div>
         </div>
 
-        {/* Right - Links */}
         <nav className="grid grid-cols-2 gap-x-8 gap-y-2">
           {NAV_ITEMS.map((item) => (
             <Link
