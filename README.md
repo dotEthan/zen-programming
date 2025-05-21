@@ -46,6 +46,7 @@ Using Next.js as I haven't and I hear good things. I also have some long term th
 ## Built With
 
 - Next.JS
+- TailwindCSS
 
 ## Author
 
