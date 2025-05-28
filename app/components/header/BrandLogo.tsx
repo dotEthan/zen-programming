@@ -15,7 +15,7 @@ export default function BrandLogo() {
             className="object-cover dark:invert" 
           />
         </div>
-        <span className="text-xl font-bold text-gray-900 dark:text-white">Zenful Programming</span>
+        <span className="text-xl font-bold">Zenful Programming</span>
       </Link>
     </div>
   );

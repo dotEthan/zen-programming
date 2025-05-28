@@ -3,6 +3,7 @@ export const NAV_ITEMS = [
   {
     label: 'Tutorials',
     subItems: [
+      { path: '/tutorials/sorting', label: 'Sorting' },
       { path: '/tutorials/dsa', label: 'DSA' },
       { path: '/tutorials/system-design', label: 'System Design' },
       { path: '/tutorials/design-patterns', label: 'Design Patterns' },

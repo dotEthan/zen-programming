@@ -52,14 +52,14 @@ export default function NavItem({ item }: { item: NavItemProp }) {
         </button>
         {isOpen && (
           <div
-            className="absolute top-full left-0 mt-2 w-48 bg-white shadow-lg rounded-md z-10"
+            className="absolute top-full left-0 mt-2 w-48 bg-white dark:bg-gray-900 shadow-lg rounded-md z-10"
             role="menu"
           >
             {item.subItems.map((subItem) => (
               <Link
                 key={subItem.path}
                 href={subItem.path}
-                className="block px-4 py-2 text-gray-800 hover:bg-gray-100 focus:bg-gray-100 focus:outline-none"
+                className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-700 focus:bg-gray-100 focus:outline-none"
                 role="menuitem"
                 tabIndex={0}
               >
@@ -75,7 +75,7 @@ export default function NavItem({ item }: { item: NavItemProp }) {
   return (
     <Link
       href={item.path!}
-      className="text-gray-800 hover:text-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 rounded px-2 py-1"
+      className="hover:text-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 rounded px-2 py-1"
       aria-current={typeof window !== 'undefined' && window.location.pathname === item.path ? 'page' : undefined}
     >
       {item.label}
