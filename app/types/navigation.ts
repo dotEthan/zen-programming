@@ -10,16 +10,21 @@ export const NAV_ITEMS = [
       { path: '/tutorials/principles', label: 'General Principles' }
     ]
   },
-    { path: '/blog', label: 'Blog' },
-    { path: '/courses', label: 'Courses' },
-    { path: '/about', label: 'About' }
-  ];
+  { path: '/blog', label: 'Blog' },
+  { path: '/courses', label: 'Courses' },
+  { path: '/about', label: 'About' }
+];
 
-  export interface NavItemProp {
+export interface NavItemProp {
+  label: string;
+  path?: string;
+  subItems?: Array<{
+    path: string;
     label: string;
-    path?: string;
-    subItems?: Array<{
-      path: string;
-      label: string;
-    }>;
-  }
+  }>;
+}
+
+export interface ChevronIconProps {
+  isOpen?: boolean;
+  className?: string;
+}
