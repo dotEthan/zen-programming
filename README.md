@@ -4,7 +4,7 @@ Github URL (You're here!): https://github.com/dotEthan/zen-programming
 
 ## Built With
 
-- Next.JS,
+- Next.js,
 - TailwindCSS
 - React Testing Library
 
@@ -16,7 +16,7 @@ Testing and designing currently.
 
 ### Why Next.js?
 
- - Next.js is overkill, I am aware there are better ways to create this site, I chose Next.Js because while I've worked with React, I haven't worked with Next.JS and I wanted to see what all the fuss was about. 
+ - Next.js is overkill, I am aware there are better ways to create this site, I chose Next.js because while I've worked with React, I haven't worked with Next.js and I wanted to see what all the fuss was about. 
  
 ### Why this site in general?
 
@@ -42,15 +42,15 @@ Basic site format up and running
 - Designing full site and backend needs
 - Organizing error handling
 - Moving towards Full Test Driven Development (TDD) practices
+- Sorting Types
 
 ### To Come:
 
 - Full test suite
-- Sorting Types
 - DSA
 - System Design
 - Design Patterns
-- Blog
+- Blog - Cognitive load, AI, clean code
 - Youtube/Video support
 - Mentorship Opportunities, Discord community, etc
 

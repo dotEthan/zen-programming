@@ -1,8 +1,3 @@
-interface ChevronIconProps {
-    isOpen?: boolean;
-    className?: string;
-}
-
 export default function ChevronIcon({ isOpen }: { isOpen: boolean }) {
   return (
     <svg
